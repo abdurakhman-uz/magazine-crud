@@ -1,0 +1,18 @@
+[
+    {
+        "id": "39d630a25e0eaeb66dc15096895b65e1",
+        "user_id": "2d1860e2692e47f20fb14f9745010e61",
+        "name": "BMW",
+        "author": "Abdurakhman",
+        "price": "120000$",
+        "img": "/upload/1677652825430.jpg"
+    },
+    {
+        "id": "2514384d5929387ead0c21a9aa7e86a0",
+        "user_id": "2d1860e2692e47f20fb14f9745010e61",
+        "name": "BMW",
+        "author": "Abdurakhman",
+        "price": "130000$",
+        "img": "/upload/1677652955897.jpg"
+    }
+]

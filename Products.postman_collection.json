@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "fbf2dfdf-9f30-4635-a1cf-676c9972985d",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22916698"
+	},
+	"item": [
+		{
+			"name": "get_products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMTg2MGUyNjkyZTQ3ZjIwZmIxNGY5NzQ1MDEwZTYxIiwiZW1haWwiOiJhYmR1YXppbW92Nzc4OEBnbWFpbC5jb20iLCJpYXQiOjE2Nzc0ODYyODgsImV4cCI6MTY3Nzc0NTQ4OH0.ACVVyDO3SILaUVHJYRPfzn_P9bEQFpoz76HRT6iIcdY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_one_product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMTg2MGUyNjkyZTQ3ZjIwZmIxNGY5NzQ1MDEwZTYxIiwiZW1haWwiOiJhYmR1YXppbW92Nzc4OEBnbWFpbC5jb20iLCJpYXQiOjE2Nzc0ODYyODgsImV4cCI6MTY3Nzc0NTQ4OH0.ACVVyDO3SILaUVHJYRPfzn_P9bEQFpoz76HRT6iIcdY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/products/jfjvbidbvuehaiuvhd8fh9w3y4e723yd2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products",
+						"jfjvbidbvuehaiuvhd8fh9w3y4e723yd2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMTg2MGUyNjkyZTQ3ZjIwZmIxNGY5NzQ1MDEwZTYxIiwiZW1haWwiOiJhYmR1YXppbW92Nzc4OEBnbWFpbC5jb20iLCJpYXQiOjE2Nzc0NzQxMTMsImV4cCI6MTY3NzczMzMxM30.KWv0Igk-kgnt4g3Yr1YFxm25vyzEJirO15AgvPFBiF4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Listen Phonk\",\r\n    \"completed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMTg2MGUyNjkyZTQ3ZjIwZmIxNGY5NzQ1MDEwZTYxIiwiZW1haWwiOiJhYmR1YXppbW92Nzc4OEBnbWFpbC5jb20iLCJpYXQiOjE2Nzc0NzQxMTMsImV4cCI6MTY3NzczMzMxM30.KWv0Igk-kgnt4g3Yr1YFxm25vyzEJirO15AgvPFBiF4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Listen Phonks\",\r\n    \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/products/236c011451d36eb2de1cbd20c992ba89",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products",
+						"236c011451d36eb2de1cbd20c992ba89"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMTg2MGUyNjkyZTQ3ZjIwZmIxNGY5NzQ1MDEwZTYxIiwiZW1haWwiOiJhYmR1YXppbW92Nzc4OEBnbWFpbC5jb20iLCJpYXQiOjE2Nzc0NzQxMTMsImV4cCI6MTY3NzczMzMxM30.KWv0Igk-kgnt4g3Yr1YFxm25vyzEJirO15AgvPFBiF4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/products/236c011451d36eb2de1cbd20c992ba89",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"products",
+						"236c011451d36eb2de1cbd20c992ba89"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"abduazimov7788@gmail.com\",\r\n    \"password\": \"12121212\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"abduazimov\",\r\n    \"email\": \"abduazimov@gmail.com\",\r\n    \"password\": \"12121212\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
