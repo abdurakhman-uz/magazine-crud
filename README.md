@@ -15,8 +15,8 @@
 ## in  case -> Routes
 
 - Products Route:
-	- `/product`
-	- `/product/:id`
+	- `/products`
+	- `/products/:id`
 
 - Auth Route:
 	- `/login`
