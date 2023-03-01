@@ -1,11 +1,30 @@
 {
 	"info": {
-		"_postman_id": "fbf2dfdf-9f30-4635-a1cf-676c9972985d",
+		"_postman_id": "a4a0bc91-660d-4b21-9c4d-385dc73201ab",
 		"name": "Products",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22916698"
 	},
 	"item": [
+		{
+			"name": "get_all_products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/all_products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"all_products"
+					]
+				}
+			},
+			"response": []
+		},
 		{
 			"name": "get_products",
 			"request": {
@@ -43,7 +62,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:4000/products/jfjvbidbvuehaiuvhd8fh9w3y4e723yd2",
+					"raw": "http://localhost:4000/products/cd583a25158331e062dc4d20e42664af",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -51,7 +70,42 @@
 					"port": "4000",
 					"path": [
 						"products",
-						"jfjvbidbvuehaiuvhd8fh9w3y4e723yd2"
+						"cd583a25158331e062dc4d20e42664af"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "image_upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjJkMTg2MGUyNjkyZTQ3ZjIwZmIxNGY5NzQ1MDEwZTYxIiwiZW1haWwiOiJhYmR1YXppbW92Nzc4OEBnbWFpbC5jb20iLCJpYXQiOjE2Nzc0ODYyODgsImV4cCI6MTY3Nzc0NTQ4OH0.ACVVyDO3SILaUVHJYRPfzn_P9bEQFpoz76HRT6iIcdY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/abdua/Pictures/Screenshots/Снимок экрана (56).png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"upload"
 					]
 				}
 			},
@@ -70,7 +124,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Listen Phonk\",\r\n    \"completed\": false\r\n}",
+					"raw": "{\r\n    \"title\": \"Phonks\",\r\n    \"price\": \"10$\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -104,7 +158,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Listen Phonks\",\r\n    \"completed\": true\r\n}",
+					"raw": "{\r\n    \"title\": \"Listen Phonks\",\r\n    \"completed\": \"12$\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -112,7 +166,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4000/products/236c011451d36eb2de1cbd20c992ba89",
+					"raw": "http://localhost:4000/products/cd583a25158331e062dc4d20e42664af",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -120,7 +174,7 @@
 					"port": "4000",
 					"path": [
 						"products",
-						"236c011451d36eb2de1cbd20c992ba89"
+						"cd583a25158331e062dc4d20e42664af"
 					]
 				}
 			},
@@ -138,7 +192,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:4000/products/236c011451d36eb2de1cbd20c992ba89",
+					"raw": "http://localhost:4000/products/b12a1bdfe5ffaef33ed6c0014d67b206",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -146,7 +200,7 @@
 					"port": "4000",
 					"path": [
 						"products",
-						"236c011451d36eb2de1cbd20c992ba89"
+						"b12a1bdfe5ffaef33ed6c0014d67b206"
 					]
 				}
 			},
