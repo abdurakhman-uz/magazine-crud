@@ -42,28 +42,22 @@ let Products = {
 
     UPDATE: (req, res) => {
         try {
-            let products = read("products").filter(product => product.user_id === id)
+            let products = read("products")
 
-            if (products) {
-                console.log(products);
-                // const {title, author, price} = req.body
+            const {title, author, price} = req.body
 
-                // products.forEach((product) => {
-                //     if (product.id === req.params.id) {
-                //         product.title = title ? title : product.title
-                //         product.author = author ? author : product.author
-                //         product.price = price ? price : product.price
-                //     } else {
-                //         return res.status(404).send({msg: "Product not found"})
-                //     }
-                // })
+            products.forEach((product) => {
+                if (product.id === req.params.id) {
+                    product.title = title ? title : product.title
+                    product.author = author ? author : product.author
+                    product.price = price ? price : product.price
+                }
+            })
 
-                // write("products", products)
+            write("products", products)
 
-                return res.status(200).send({msg: "Product Updated!"})
-            } else {
-                return res.status(404).send({msg: "Products have not!"})
-            }
+            return res.status(200).send({msg: "Product Updated!"})
+
         } catch (error) {}
     },
 
@@ -73,19 +67,13 @@ let Products = {
         products.forEach((product, idx) => {
             if (product.id === req.params.id) {
                 products.splice(idx, 1)
-            } else {
-                return res.status(404).send({msg: "Product not found"})
             }
         })
 
         write("products", products)
 
         res.status(200).send({msg: "Product Deleted!"})
-    },
-
-    // IMAGE: (req, res) => {
-    //     res.send({ img: req.file.filename})
-    // }
+    }
 }
 
 module.exports = Products

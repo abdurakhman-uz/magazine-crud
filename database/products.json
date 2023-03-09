@@ -1,18 +1,32 @@
 [
     {
-        "id": "39d630a25e0eaeb66dc15096895b65e1",
+        "id": "9f49e042ccce1d9c5dd8a844973129a9",
         "user_id": "2d1860e2692e47f20fb14f9745010e61",
-        "name": "BMW",
+        "title": "BMW",
         "author": "Abdurakhman",
-        "price": "120000$",
-        "img": "/upload/1677652825430.jpg"
+        "price": "4$"
     },
     {
-        "id": "2514384d5929387ead0c21a9aa7e86a0",
+        "id": "0b8d5733480e77c613a565dbc2cd5c86",
         "user_id": "2d1860e2692e47f20fb14f9745010e61",
-        "name": "BMW",
-        "author": "Abdurakhman",
-        "price": "130000$",
-        "img": "/upload/1677652955897.jpg"
+        "title": "BMW",
+        "author": "Abdurakhmans",
+        "price": "30$"
+    },
+    {
+        "id": "ed7b09c61305201e85050c04477aaa02",
+        "user_id": "2d1860e2692e47f20fb14f9745010e61",
+        "title": "BMW",
+        "author": "ABDUAZIMOV",
+        "price": "100$",
+        "img": "/upload/1677750344011.jpg"
+    },
+    {
+        "id": "1a70884e093d96c674abdc029a3e65a3",
+        "user_id": "2d1860e2692e47f20fb14f9745010e61",
+        "name": "mmv",
+        "author": "ab",
+        "price": "10$",
+        "img": "/upload/1677751918560.jpg"
     }
 ]
